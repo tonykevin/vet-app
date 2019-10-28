@@ -1,6 +1,6 @@
 # Vet
 
-Application to manage the activities of a veterinarian.
+Application to manage the activities of a vet.
 
 ## Setup
 

@@ -1,7 +1,9 @@
 {
   "name": "vet",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "description": "Application to manage the activities of a vet.",
+  "author": "tonykevin <h@tonykevin.com>",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
