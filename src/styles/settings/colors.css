@@ -3,9 +3,15 @@
 \* ------------------------------------ */
 
 :root {
-  --color-azureish-white: #ffa69e;
-  --color-light-salmon-pink: #e1e5f2;
+  --color-azureish-white: #e1e5f2;
+  --color-light-salmon-pink: #ffa69e;
   --color-maastricht-blue: #022b3a;
   --color-metallic-seaweed: #1f7a8c;
   --color-powder-blue: #afe9dd;
+
+  --color-grey-light: #f3f3f3;
+  --color-white: #fff;
+
+  /* Reassign literal variables to meaningful ones. */
+  --color-page-bg: var(--color-grey-light);
 }
