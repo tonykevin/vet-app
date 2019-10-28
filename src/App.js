@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from './images/logo/vet.svg'
-import './App.css'
 
 function App () {
   return (

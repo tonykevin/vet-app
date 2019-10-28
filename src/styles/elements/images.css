@@ -1,0 +1,13 @@
+/* ------------------------------------ *\
+  #IMAGES
+\* ------------------------------------ */
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+img[height],
+img[width] {
+  max-width: none;
+}

@@ -1,5 +1,9 @@
 /* ------------------------------------ *\
-  # App styles
+  #COLORS
 \* ------------------------------------ */
 
-@import './styles/main.css';
+:root {
+  --color-brand-primary: #afe9dd;
+
+  --color-page-text: #1a1a1a;
+}

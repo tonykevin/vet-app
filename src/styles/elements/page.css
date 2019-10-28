@@ -1,0 +1,15 @@
+/* ------------------------------------ *\
+  #PAGE
+\* ------------------------------------ */
+
+/**
+ * Page-level styling (e.g. HTML and BODY elements).
+ */
+
+html {
+  background-color: #f2f2f2;
+  color: var(--color-page-text);
+  font-family: var(--global-font-family);
+  font-size: var(--global-font-size);
+  line-height: var(--global-line-height);
+}
