@@ -18,6 +18,9 @@
  *
  * OBJECTS
  * Wrappers.............Wrappers and page constraints.
+ *
+ * COMPONENTS
+ * Page-head............Page header styles.
  */
 
 @import 'settings/all.css';
@@ -30,4 +33,4 @@
 
 @import 'objects/wrappers.css';
 
-@import 'components/app.css';
+@import 'components/page-head.css';

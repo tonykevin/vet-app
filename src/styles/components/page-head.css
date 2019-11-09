@@ -1,0 +1,16 @@
+/* ------------------------------------ *\
+  #PAGE-HEAD
+\* ------------------------------------ */
+
+.c-page-head {
+  background-color: var(--color-page-header-bg);
+  box-shadow: 0 0.2em 0.2em -0.3em rgba(0, 0, 0, 0.5);
+  color: var(--color-page-header-text);
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+  .c-page-head__imagotype {
+    width: 5em;
+  }

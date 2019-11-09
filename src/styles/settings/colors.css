@@ -14,4 +14,7 @@
 
   /* Reassign literal variables to meaningful ones. */
   --color-page-bg: var(--color-grey-light);
+
+  --color-page-header-bg: var(--color-azureish-white);
+  --color-page-header-text: var(--color-maastricht-blue);
 }
