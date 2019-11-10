@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#afe9dd",
-  "background_color": "#f2f2f2"
+  "theme_color": "#e1e5f2",
+  "background_color": "#f3f3f3"
 }
