@@ -2,10 +2,18 @@
   # WRAPPERS
 \* ------------------------------------ */
 
+.o-wrapper--page-head,
 .o-wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
   padding-left: var(--global-spacing-unit);
   padding-right: var(--global-spacing-unit);
+}
+
+.o-wrapper--page-head {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
