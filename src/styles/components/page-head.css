@@ -8,9 +8,15 @@
   color: var(--color-page-header-text);
   display: flex;
   align-items: center;
-  padding: 1em;
+  padding: 1.2rem;
 }
 
   .c-page-head__imagotype {
     width: 5em;
   }
+
+@media (min-width: 80em) {
+  .c-page-head {
+    padding: 1rem;
+  }
+}

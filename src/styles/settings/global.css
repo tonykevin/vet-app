@@ -9,10 +9,12 @@
  * global-font-size..............calculate: (font-size / 16) * 1em
  * - font-size: 16x......................................core size
  * - font-size-sm: 14px.................................small size
+ * - font-size-lg: 20px.................................large size
  *
  * global-line-height...........Calculate: line-height / font-size
  * - line-height: 22px...................................core size
  * - line-height-sm: 20px...............................small size
+ * - line-height-sm: 26px...............................large size
  *
  * global-font-family
  *
@@ -44,5 +46,12 @@
   :root {
     --global-font-size: 1em;
     --global-line-height: 1.375;
+  }
+}
+
+@media (min-width: 80em) {
+  :root {
+    --global-font-size: 1.25em;
+    --global-line-height: 1.3;
   }
 }
