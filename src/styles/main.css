@@ -22,6 +22,9 @@
  *
  * COMPONENTS
  * Page-head............Page header styles.
+ *
+ * UTILITIES
+ * Headings.............Reassigning our heading styles to helper classes.
  */
 
 @import 'settings/all.css';
@@ -36,3 +39,5 @@
 @import 'objects/wrappers.css';
 
 @import 'components/page-head.css';
+
+@import 'utilities/headings.css';

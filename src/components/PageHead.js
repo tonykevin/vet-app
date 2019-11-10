@@ -9,7 +9,7 @@ const PageHeader = ({ title }) => (
         className='c-page-head__imagotype'
         src={imagotype}
       />
-      <h1 class='c-page-head__title'>{title}</h1>
+      <h1 className='c-page-head__title u-h3'>{title}</h1>
     </div>
   </header>
 )
