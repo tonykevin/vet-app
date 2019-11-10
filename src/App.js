@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { PageHead } from './components'
 
-function App () {
-  return (
-    <>
-      <PageHead />
-    </>
-  )
+class App extends Component {
+  render () {
+    return (
+      <>
+        <PageHead />
+      </>
+    )
+  }
 }
-
 export default App
