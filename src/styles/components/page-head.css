@@ -11,3 +11,16 @@
   .c-page-head__imagotype {
     width: 5em;
   }
+
+    .c-page-head__title {
+      margin: 0;
+    }
+
+    .c-page-head__title::before {
+      border-left: 1px solid var(--color-sunset-orange);
+      content: '';
+      display: inline-block;
+      height: 1rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }

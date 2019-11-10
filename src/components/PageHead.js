@@ -1,7 +1,7 @@
 import React from 'react'
 import imagotype from '../images/brand/vet-imagotype.svg'
 
-const PageHeader = () => (
+const PageHeader = ({ title }) => (
   <header className='c-page-head'>
     <div className='o-wrapper--page-head'>
       <img
@@ -9,6 +9,7 @@ const PageHeader = () => (
         className='c-page-head__imagotype'
         src={imagotype}
       />
+      <h1 class='c-page-head__title'>{title}</h1>
     </div>
   </header>
 )
