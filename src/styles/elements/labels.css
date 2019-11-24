@@ -1,0 +1,10 @@
+/* ------------------------------------ *\
+  #LABELS
+\* ------------------------------------ */
+
+label {
+  cursor: pointer;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-transform: capitalize;
+}

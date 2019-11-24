@@ -15,6 +15,7 @@
  * ELEMENTS
  * Headings.............Heading styles.
  * Images...............Base image styles.
+ * Labels...............Styles for form labels.
  * Page.................Page-level styles (HTML element).
  *
  * OBJECTS
@@ -34,6 +35,7 @@
 
 @import 'elements/headings.css';
 @import 'elements/images.css';
+@import 'elements/labels.css';
 @import 'elements/page.css';
 
 @import 'objects/wrappers.css';
