@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import { PageHead } from './components'
+import { Appointment, PageHead } from './components'
 
 class App extends Component {
   render () {
     return (
       <>
         <PageHead title='Pacientes' />
+        <Appointment />
       </>
     )
   }
