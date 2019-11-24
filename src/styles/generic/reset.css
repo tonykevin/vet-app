@@ -2,7 +2,8 @@
   #RESET
 \* ------------------------------------ */
 
-body {
+body,
+label {
   margin: 0;
   padding: 0;
 }
