@@ -58,7 +58,7 @@ class Appointment extends Component {
             síntomas
           </label>
           <textarea
-            className='o-input-form'
+            className='o-input-form c-appt-form__textarea'
             id='apptSymptom'
             name='symptom'
             placeholder='Describe los síntomas'

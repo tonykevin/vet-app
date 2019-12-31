@@ -23,6 +23,7 @@
  * Wrappers.............Wrappers and page constraints.
  *
  * COMPONENTS
+ * Appt-form............Appointment form styles.
  * Page-head............Page header styles.
  *
  * UTILITIES
@@ -42,6 +43,7 @@
 @import 'objects/input-form.css';
 @import 'objects/wrappers.css';
 
+@import 'components/appt-form.css';
 @import 'components/page-head.css';
 
 @import 'utilities/headings.css';
