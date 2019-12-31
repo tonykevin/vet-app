@@ -7,3 +7,14 @@ label {
   margin: 0;
   padding: 0;
 }
+
+textarea,
+input {
+  border: 0;
+  border-radius: 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}

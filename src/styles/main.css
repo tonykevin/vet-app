@@ -19,6 +19,7 @@
  * Page.................Page-level styles (HTML element).
  *
  * OBJECTS
+ * Input-form...........Styles for a data entry form.
  * Wrappers.............Wrappers and page constraints.
  *
  * COMPONENTS
@@ -38,6 +39,7 @@
 @import 'elements/labels.css';
 @import 'elements/page.css';
 
+@import 'objects/input-form.css';
 @import 'objects/wrappers.css';
 
 @import 'components/page-head.css';

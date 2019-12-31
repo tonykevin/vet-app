@@ -1,0 +1,22 @@
+/* ------------------------------------ *\
+  # INPUT-FORM
+\* ------------------------------------ */
+
+.o-input-form{
+  background-color: var(--color-white);
+  border: 0;
+  font-size: 1em;
+  height: 2.6em;
+  padding: 0 0.5em;
+  width: 100%;
+}
+
+.o-input-form:focus {
+  filter: drop-shadow(0 0 1px var(--color-bondi-blue));
+}
+
+@media (min-width: 80em) {
+  .o-input-form {
+    height: 2.2em;
+  }
+}

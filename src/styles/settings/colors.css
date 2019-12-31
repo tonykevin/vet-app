@@ -4,11 +4,13 @@
 
 :root {
   --color-azureish-white: #e1e5f2;
+  --color-bondi-blue: #0094C6;
   --color-maastricht-blue: #022b3a;
   --color-metallic-seaweed: #1f7a8c;
   --color-powder-blue: #afe9dd;
   --color-sunset-orange: #ee6352;
 
+  --color-grey: #ccc;
   --color-grey-light: #f3f3f3;
   --color-white: #fff;
 

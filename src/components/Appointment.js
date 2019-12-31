@@ -5,17 +5,18 @@ class Appointment extends Component {
     return (
       <div className='o-wrapper'>
         <h2>Crear un nueva cita</h2>
-        <form className='o-form'>
+        <form>
           <label
             htmlFor='apptName'
           >
             animal
           </label>
           <input
+            className='o-input-form'
             id='apptName'
-            type='text'
-            placeholder='Nombre del animal'
             name='animal'
+            placeholder='Nombre del animal'
+            type='text'
           />
           <label
             htmlFor='apptOwner'
@@ -23,10 +24,11 @@ class Appointment extends Component {
             propietario
           </label>
           <input
+            className='o-input-form'
             id='apptOwner'
-            type='text'
-            placeholder='Nombre del propietario'
             name='owner'
+            placeholder='Nombre del propietario'
+            type='text'
           />
           <label
             htmlFor='apptDate'
@@ -34,9 +36,10 @@ class Appointment extends Component {
             fecha
           </label>
           <input
+            className='o-input-form'
             id='apptDate'
-            type='date'
             name='date'
+            type='date'
           />
           <label
             htmlFor='apptHour'
@@ -44,9 +47,10 @@ class Appointment extends Component {
             hora
           </label>
           <input
+            className='o-input-form'
             id='apptHour'
-            type='time'
             name='hour'
+            type='time'
           />
           <label
             htmlFor='apptSymptom'
@@ -54,6 +58,7 @@ class Appointment extends Component {
             síntomas
           </label>
           <textarea
+            className='o-input-form'
             id='apptSymptom'
             name='symptom'
             placeholder='Describe los síntomas'
