@@ -3,6 +3,7 @@
 \* ------------------------------------ */
 
   .c-appt-form__textarea {
-    padding: 0.5em;
     height: 20vh;
+    padding: 0.5em;
+    resize: vertical;
   }
