@@ -3,8 +3,11 @@
 \* ------------------------------------ */
 
 :root {
+  --color-brand-primary: #0094c6;
+  --color-brand-primary-dark10: #006e93;
+  --color-brand-primary-shadow: rgba(0, 148, 198, 0.7);
+
   --color-azureish-white: #e1e5f2;
-  --color-bondi-blue: #0094C6;
   --color-maastricht-blue: #022b3a;
   --color-metallic-seaweed: #1f7a8c;
   --color-powder-blue: #afe9dd;

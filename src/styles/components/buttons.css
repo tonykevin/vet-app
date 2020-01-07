@@ -1,0 +1,29 @@
+/* ------------------------------------ *\
+  # BUTTONS
+\* ------------------------------------ */
+
+.c-btn {
+  align-items: center;
+  border: none;
+  border-radius: 0.2em;
+  color: var(--color-white);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  justify-content: center;
+  outline: 0;
+  padding: var(--global-spacing-unit-small) var(--global-spacing-unit);
+  text-decoration: none;
+  transition: var(--global-transition);
+}
+
+.c-btn:active,
+.c-btn:focus,
+.c-btn:hover {
+  filter: drop-shadow(0 0 14px var(--color-brand-primary-shadow));
+}
+
+.c-btn--primary {
+  background-color: var(--color-brand-primary);
+  box-shadow: 0 2px 1px 0 var(--color-brand-primary-dark10);
+}

@@ -40,6 +40,10 @@
 
   /* Spacing unit */
   --global-spacing-unit: 1rem;
+  --global-spacing-unit-tiny: 0.25rem;
+  --global-spacing-unit-small: 0.5rem;
+  --global-spacing-unit-large: 2rem;
+  --global-spacing-unit-huge: 4rem;
 }
 
 @media (min-width: 48em) {

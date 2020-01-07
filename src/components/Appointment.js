@@ -63,7 +63,7 @@ class Appointment extends Component {
             name='symptom'
             placeholder='Describe los síntomas'
           />
-          <button>Agregar nueva cita</button>
+          <button className='c-btn c-btn--primary'>Agregar nueva cita</button>
         </form>
       </div>
     )
