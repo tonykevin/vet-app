@@ -1,0 +1,20 @@
+/* ------------------------------------ *\
+  # LAYOUT
+\* ------------------------------------ */
+
+.o-layout {
+  display: grid;
+  grid-gap: var(--global-spacing-unit-small);
+}
+
+  .o-layout__item--end {
+    justify-self: end;
+  }
+
+  .o-layout__item--middle {
+    justify-self: center;
+  }
+
+  .o-layout__item--start {
+    justify-self: start;
+  }

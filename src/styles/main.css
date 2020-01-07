@@ -20,6 +20,7 @@
  *
  * OBJECTS
  * Input-form...........Styles for a data entry form.
+ * Layout...............Generic layout module.
  * Wrappers.............Wrappers and page constraints.
  *
  * COMPONENTS
@@ -42,6 +43,7 @@
 @import 'elements/page.css';
 
 @import 'objects/input-form.css';
+@import 'objects/layout.css';
 @import 'objects/wrappers.css';
 
 @import 'components/appointment.css';
