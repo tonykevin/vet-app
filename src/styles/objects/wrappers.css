@@ -12,8 +12,10 @@
 }
 
 .o-wrapper--page-head {
-  display: flex;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  display: flex;
+  padding-bottom: var(--global-spacing-unit);
+  padding-left: var(--global-spacing-unit-large);
+  padding-right: var(--global-spacing-unit-large);
+  padding-top: var(--global-spacing-unit);
 }
