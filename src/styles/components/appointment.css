@@ -6,16 +6,17 @@
   padding: var(--global-spacing-unit);
   border-radius: 3px;
 }
-    .c-appointment__title {
-      margin: 0;
-      margin-bottom: var(--global-spacing-unit-tiny);
-    }
 
-      .c-appointment__textarea {
-        height: 20vh;
-        padding: 0.5em;
-        resize: vertical;
-      }
+  .c-appointment__title {
+    margin: 0;
+    margin-bottom: var(--global-spacing-unit-tiny);
+  }
+
+    .c-appointment__textarea {
+      height: 20vh;
+      padding: 0.5em;
+      resize: vertical;
+    }
 
 @media (min-width: 80em) {
   .c-appointment {
