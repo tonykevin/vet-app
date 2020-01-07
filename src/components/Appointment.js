@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 class Appointment extends Component {
   render () {
     return (
-      <div className='o-wrapper'>
-        <h2>Crear un nueva cita</h2>
-        <form>
+      <div className='c-appointment'>
+        <h2 className='c-appointment__title'>Crear una nueva cita</h2>
+        <form className='c-appointment__form'>
           <label
             htmlFor='apptName'
           >
@@ -58,7 +58,7 @@ class Appointment extends Component {
             síntomas
           </label>
           <textarea
-            className='o-input-form c-appt-form__textarea'
+            className='o-input-form c-appointment__textarea'
             id='apptSymptom'
             name='symptom'
             placeholder='Describe los síntomas'

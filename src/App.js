@@ -6,7 +6,9 @@ class App extends Component {
     return (
       <>
         <PageHead title='Pacientes' />
-        <Appointment />
+        <main className='o-wrapper'>
+          <Appointment />
+        </main>
       </>
     )
   }

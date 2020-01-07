@@ -1,9 +1,0 @@
-/* ------------------------------------ *\
-  # APPOINTMENT FORM
-\* ------------------------------------ */
-
-  .c-appt-form__textarea {
-    height: 20vh;
-    padding: 0.5em;
-    resize: vertical;
-  }
