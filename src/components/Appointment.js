@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import uuid from 'uuid'
 
 class Appointment extends Component {
   state = {
@@ -36,6 +37,13 @@ class Appointment extends Component {
 
       return 1
     }
+
+    // create an object with new appointment
+    const newAppointment = { ...this.state.appointment }
+    newAppointment.id = uuid()
+
+    // Add a new appointment to app state
+    this.props.createNewAppointment(newAppointment)
   }
 
   render () {
