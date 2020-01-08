@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import uuid from 'uuid'
 
+const initialState = {
+  appointment: {
+    animal: '',
+    owner: '',
+    date: '',
+    hour: '',
+    symptom: ''
+  },
+  error: false
+}
+
 class Appointment extends Component {
-  state = {
-    appointment: {
-      animal: '',
-      owner: '',
-      date: '',
-      hour: '',
-      symptom: ''
-    },
-    error: false
-  }
+  state = { ...initialState }
 
   // Update the state with input data
   handleChange = e => {
@@ -44,6 +46,10 @@ class Appointment extends Component {
 
     // Add a new appointment to app state
     this.props.createNewAppointment(newAppointment)
+
+    this.setState({
+      ...initialState
+    })
   }
 
   render () {
