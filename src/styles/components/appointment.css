@@ -18,8 +18,8 @@
       resize: vertical;
     }
 
-@media (min-width: 80em) {
+@media (min-width: 45em) {
   .c-appointment {
-    max-width: 30vw;
+    max-width: 25rem;
   }
 }
