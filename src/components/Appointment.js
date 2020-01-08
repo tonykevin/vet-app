@@ -8,9 +8,11 @@ class Appointment extends Component {
       date: '',
       hour: '',
       symptom: ''
-    }
+    },
+    error: false
   }
 
+  // Update the state with input data
   handleChange = e => {
     this.setState({
       appointment: {
@@ -20,11 +22,30 @@ class Appointment extends Component {
     })
   }
 
+  // Send form
+  handleSubmit = e => {
+    e.preventDefault()
+
+    const { animal, owner, date, hour, symptom } = this.state.appointment
+
+    // Validate info
+    if (animal === '' || owner === '' || date === '' || hour === '' || symptom === '') {
+      this.setState({
+        error: true
+      })
+
+      return 1
+    }
+  }
+
   render () {
     return (
       <div className='c-appointment'>
         <h2 className='c-appointment__title'>Crear una nueva cita</h2>
-        <form className='o-layout c-appointment__form'>
+        <form
+          className='o-layout c-appointment__form'
+          onSubmit={this.handleSubmit}
+        >
           <div className='o-layout__item o-layout__item--form'>
             <label
               htmlFor='apptName'
