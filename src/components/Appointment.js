@@ -1,6 +1,25 @@
 import React, { Component } from 'react'
 
 class Appointment extends Component {
+  state = {
+    appointment: {
+      animal: '',
+      owner: '',
+      date: '',
+      hour: '',
+      symptom: ''
+    }
+  }
+
+  handleChange = e => {
+    this.setState({
+      appointment: {
+        ...this.state.appointment,
+        [e.target.name]: e.target.value
+      }
+    })
+  }
+
   render () {
     return (
       <div className='c-appointment'>
@@ -16,8 +35,10 @@ class Appointment extends Component {
               className='o-input-form'
               id='apptName'
               name='animal'
+              onChange={this.handleChange}
               placeholder='Nombre del animal'
               type='text'
+              value={this.state.appointment.animal}
             />
           </div>
           <div className='o-layout__item o-layout__item--form'>
@@ -30,8 +51,10 @@ class Appointment extends Component {
               className='o-input-form'
               id='apptOwner'
               name='owner'
+              onChange={this.handleChange}
               placeholder='Nombre del propietario'
               type='text'
+              value={this.state.appointment.owner}
             />
           </div>
           <div className='o-layout__item o-layout__item--vsplit2'>
@@ -45,7 +68,9 @@ class Appointment extends Component {
                 className='o-input-form'
                 id='apptDate'
                 name='date'
+                onChange={this.handleChange}
                 type='date'
+                value={this.state.appointment.date}
               />
             </div>
             <div className='o-layout__item o-layout__item--form'>
@@ -58,7 +83,9 @@ class Appointment extends Component {
                 className='o-input-form'
                 id='apptHour'
                 name='hour'
+                onChange={this.handleChange}
                 type='time'
+                value={this.state.appointment.hour}
               />
             </div>
           </div>
@@ -72,7 +99,9 @@ class Appointment extends Component {
               className='o-input-form c-appointment__textarea'
               id='apptSymptom'
               name='symptom'
+              onChange={this.handleChange}
               placeholder='Describe los síntomas'
+              value={this.state.appointment.symptom}
             />
           </div>
           <button className='o-layout__item--end c-btn c-btn--primary'>Agregar nueva cita</button>
