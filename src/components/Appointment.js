@@ -6,7 +6,7 @@ class Appointment extends Component {
       <div className='c-appointment'>
         <h2 className='c-appointment__title'>Crear una nueva cita</h2>
         <form className='o-layout c-appointment__form'>
-          <div>
+          <div className='o-layout__item o-layout__item--form'>
             <label
               htmlFor='apptName'
             >
@@ -20,7 +20,7 @@ class Appointment extends Component {
               type='text'
             />
           </div>
-          <div>
+          <div className='o-layout__item o-layout__item--form'>
             <label
               htmlFor='apptOwner'
             >
@@ -34,33 +34,35 @@ class Appointment extends Component {
               type='text'
             />
           </div>
-          <div>
-            <label
-              htmlFor='apptDate'
-            >
-              fecha
-            </label>
-            <input
-              className='o-input-form'
-              id='apptDate'
-              name='date'
-              type='date'
-            />
+          <div className='o-layout__item o-layout__item--vsplit2'>
+            <div className='o-layout__item o-layout__item--form'>
+              <label
+                htmlFor='apptDate'
+              >
+                fecha
+              </label>
+              <input
+                className='o-input-form'
+                id='apptDate'
+                name='date'
+                type='date'
+              />
+            </div>
+            <div className='o-layout__item o-layout__item--form'>
+              <label
+                htmlFor='apptHour'
+              >
+                hora
+              </label>
+              <input
+                className='o-input-form'
+                id='apptHour'
+                name='hour'
+                type='time'
+              />
+            </div>
           </div>
-          <div>
-            <label
-              htmlFor='apptHour'
-            >
-              hora
-            </label>
-            <input
-              className='o-input-form'
-              id='apptHour'
-              name='hour'
-              type='time'
-            />
-          </div>
-          <div>
+          <div className='o-layout__item o-layout__item--form'>
             <label
               htmlFor='apptSymptom'
             >
