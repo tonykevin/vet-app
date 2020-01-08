@@ -47,9 +47,16 @@ class Appointment extends Component {
   }
 
   render () {
+    const { error } = this.state
+
     return (
       <div className='c-appointment'>
         <h2 className='c-appointment__title'>Crear una nueva cita</h2>
+        {
+          error
+            ? <div className='c-alert c-alert--danger'>Todos los campos son requeridos</div>
+            : null
+        }
         <form
           className='o-layout c-appointment__form'
           onSubmit={this.handleSubmit}

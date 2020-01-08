@@ -3,6 +3,8 @@
 \* ------------------------------------ */
 
 :root {
+  --color-alert-danger: rgba(238, 100, 100, 0.3);
+
   --color-brand-primary: #0094c6;
   --color-brand-primary-dark10: #006e93;
   --color-brand-primary-shadow: rgba(0, 148, 198, 0.7);

@@ -1,0 +1,17 @@
+/* ------------------------------------ *\
+  # ALERTS
+\* ------------------------------------ */
+
+.c-alert {
+  border-radius: 2px;
+  margin-bottom: var(--global-spacing-unit-small);
+  margin-top: var(--global-spacing-unit-small);
+}
+
+.c-alert--danger {
+  background-color: var(--color-alert-danger);
+  padding: var(--global-spacing-unit-small);
+}
+  .c-alert--danger::before {
+    content: '⚠️ ';
+  }
