@@ -1,7 +1,7 @@
 import PageHead from './PageHead'
-import Appointment from './Appointment'
+import CreateAppointment from './CreateAppointment'
 
 export {
-  Appointment,
+  CreateAppointment,
   PageHead
 }

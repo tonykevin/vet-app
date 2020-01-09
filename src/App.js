@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Appointment, PageHead } from './components'
+import { CreateAppointment, PageHead } from './components'
 
 class App extends Component {
   state = {
@@ -7,7 +7,7 @@ class App extends Component {
   }
 
   createNewAppointment = data => {
-    const appointments =[...this.state.appointments, data]
+    const appointments = [...this.state.appointments, data]
     this.setState({ appointments })
   }
 
@@ -16,7 +16,7 @@ class App extends Component {
       <>
         <PageHead title='Pacientes' />
         <main className='o-wrapper'>
-          <Appointment
+          <CreateAppointment
             createNewAppointment={this.createNewAppointment}
           />
         </main>

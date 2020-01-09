@@ -12,7 +12,7 @@ const initialState = {
   error: false
 }
 
-class Appointment extends Component {
+class CreateAppointment extends Component {
   state = { ...initialState }
 
   // Update the state with input data
@@ -153,4 +153,4 @@ class Appointment extends Component {
   }
 }
 
-export default Appointment
+export default CreateAppointment
