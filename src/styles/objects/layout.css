@@ -5,7 +5,7 @@
 .o-layout {
   display: grid;
   align-items: center;
-  grid-gap: var(--global-spacing-unit-small);
+  grid-gap: var(--global-spacing-unit);
 }
 
   .o-layout__item {
