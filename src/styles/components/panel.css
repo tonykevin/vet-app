@@ -1,0 +1,9 @@
+/* ------------------------------------ *\
+  #PANEL
+\* ------------------------------------ */
+
+.c-panel {
+  background-color: var(--color-panel-background);
+  border-radius: 3px;
+  padding: var(--global-spacing-unit);
+}

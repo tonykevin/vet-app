@@ -24,4 +24,6 @@
 
   --color-page-header-bg: var(--color-azureish-white);
   --color-page-header-text: var(--color-maastricht-blue);
+
+  --color-panel-background: transparent;
 }

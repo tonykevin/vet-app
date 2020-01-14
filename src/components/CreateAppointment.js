@@ -56,7 +56,7 @@ class CreateAppointment extends Component {
     const { error } = this.state
 
     return (
-      <div className='c-appointment'>
+      <div className='c-panel'>
         <h2 className='c-appointment__title'>Crear una nueva cita</h2>
         {
           error
