@@ -8,7 +8,6 @@
 }
 
   .c-appointment__title {
-    margin: 0;
     margin-bottom: var(--global-spacing-unit-tiny);
   }
 
