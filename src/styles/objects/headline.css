@@ -1,0 +1,7 @@
+/*------------------------------------*\
+  # HEADLINE
+\*------------------------------------*/
+
+.o-headline {
+  margin-bottom: var(--global-spacing-unit);
+}

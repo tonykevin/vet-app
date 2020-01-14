@@ -19,6 +19,7 @@
  * Page.................Page-level styles (HTML element).
  *
  * OBJECTS
+ * Headline.............Simple object for structuring heading pairs.
  * Input-form...........Styles for a data entry form.
  * Layout...............Generic layout module.
  * Wrappers.............Wrappers and page constraints.
@@ -44,6 +45,7 @@
 @import 'elements/labels.css';
 @import 'elements/page.css';
 
+@import 'objects/headline.css';
 @import 'objects/input-form.css';
 @import 'objects/layout.css';
 @import 'objects/wrappers.css';

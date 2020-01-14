@@ -7,10 +7,6 @@
   border-radius: 3px;
 }
 
-  .c-appointment__title {
-    margin-bottom: var(--global-spacing-unit-tiny);
-  }
-
     .c-appointment__textarea {
       height: 20vh;
       padding: 0.5em;

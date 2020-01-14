@@ -57,7 +57,7 @@ class CreateAppointment extends Component {
 
     return (
       <div className='c-panel'>
-        <h2 className='c-appointment__title'>Crear una nueva cita</h2>
+        <h2 className='o-headline'>Crear una nueva cita</h2>
         {
           error
             ? <div className='c-alert c-alert--danger'>Todos los campos son requeridos</div>
@@ -146,7 +146,11 @@ class CreateAppointment extends Component {
               value={this.state.appointment.symptom}
             />
           </div>
-          <button className='o-layout__item--end c-btn c-btn--primary'>Agregar nueva cita</button>
+          <button
+            className='o-layout__item--end c-btn c-btn--primary'
+          >
+            Agregar nueva cita
+          </button>
         </form>
       </div>
     )
