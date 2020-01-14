@@ -64,7 +64,7 @@ class CreateAppointment extends Component {
             : null
         }
         <form
-          className='o-layout c-appointment__form'
+          className='o-layout'
           onSubmit={this.handleSubmit}
         >
           <div className='o-layout__item o-layout__item--form'>

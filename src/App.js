@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <>
         <PageHead title='Pacientes' />
-        <main className='o-wrapper'>
+        <main className='o-layout o-layout--vsplit2@sm o-wrapper'>
           <CreateAppointment
             createNewAppointment={this.createNewAppointment}
           />

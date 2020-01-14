@@ -4,8 +4,11 @@
 
 .o-layout {
   display: grid;
-  align-items: center;
   grid-gap: var(--global-spacing-unit);
+}
+
+.o-layout--vsplit2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
   .o-layout__item {
@@ -31,3 +34,9 @@
   .o-layout__item--vsplit2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+@media (min-width: 45em) {
+  .o-layout--vsplit2\@sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
