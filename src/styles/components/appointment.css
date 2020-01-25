@@ -13,8 +13,7 @@
       resize: vertical;
     }
 
-@media (min-width: 45em) {
-  .c-appointment {
-    max-width: 25rem;
-  }
+.c-appointment-list {
+  align-items: center;
+  display: flex;
 }

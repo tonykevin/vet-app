@@ -56,8 +56,7 @@ class CreateAppointment extends Component {
     const { error } = this.state
 
     return (
-      <div className='c-panel'>
-        <h2 className='o-headline'>Crear una nueva cita</h2>
+      <>
         {
           error
             ? <div className='c-alert c-alert--danger'>Todos los campos son requeridos</div>
@@ -152,7 +151,7 @@ class CreateAppointment extends Component {
             Agregar nueva cita
           </button>
         </form>
-      </div>
+      </>
     )
   }
 }
