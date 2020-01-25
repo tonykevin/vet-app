@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import { CreateAppointment, PageHead } from './components'
+import {
+  AppointmentList,
+  CreateAppointment,
+  PageHead
+} from './components'
 
 class App extends Component {
   state = {
@@ -19,6 +23,7 @@ class App extends Component {
           <CreateAppointment
             createNewAppointment={this.createNewAppointment}
           />
+          <AppointmentList />
         </main>
       </>
     )
