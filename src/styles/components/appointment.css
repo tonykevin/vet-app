@@ -3,17 +3,29 @@
 \* ------------------------------------ */
 
 .c-appointment {
-  padding: var(--global-spacing-unit);
+  align-items: center;
+  background-color: var(--color-brand-primary-light);
   border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0 0 0 / 0.2);
+  grid-row-gap: var(--global-spacing-unit-tiny);
+  grid-template-columns: repeat(2, auto);
+  margin: var(--global-spacing-unit-small);
+  padding: var(--global-spacing-unit-large);
 }
 
-    .c-appointment__textarea {
-      height: 20vh;
-      padding: 0.5em;
-      resize: vertical;
-    }
+  .c-appointment__label {
+    font-weight: bold;
+  }
+
+  .c-appointment__textarea {
+    height: 20vh;
+    padding: 0.5em;
+    resize: vertical;
+  }
 
 .c-appointment-list {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
