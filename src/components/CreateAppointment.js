@@ -6,7 +6,7 @@ const initialState = {
     animal: '',
     owner: '',
     date: '',
-    hour: '',
+    time: '',
     symptom: ''
   },
   error: false
@@ -29,10 +29,10 @@ class CreateAppointment extends Component {
   handleSubmit = e => {
     e.preventDefault()
 
-    const { animal, owner, date, hour, symptom } = this.state.appointment
+    const { animal, owner, date, time, symptom } = this.state.appointment
 
     // Validate info
-    if (animal === '' || owner === '' || date === '' || hour === '' || symptom === '') {
+    if (animal === '' || owner === '' || date === '' || time === '' || symptom === '') {
       this.setState({
         error: true
       })
@@ -116,17 +116,17 @@ class CreateAppointment extends Component {
             </div>
             <div className='o-layout__item o-layout__item--form'>
               <label
-                htmlFor='apptHour'
+                htmlFor='apptTime'
               >
                 hora
               </label>
               <input
                 className='o-input-form'
-                id='apptHour'
-                name='hour'
+                id='apptTime'
+                name='time'
                 onChange={this.handleChange}
                 type='time'
-                value={this.state.appointment.hour}
+                value={this.state.appointment.time}
               />
             </div>
           </div>

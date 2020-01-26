@@ -8,8 +8,7 @@
   border-radius: 3px;
   box-shadow: 2px 2px 5px rgba(0 0 0 / 0.2);
   grid-row-gap: var(--global-spacing-unit-tiny);
-  grid-template-columns: repeat(2, auto);
-  margin: var(--global-spacing-unit-small);
+  grid-template-columns: 4.5rem auto;
   padding: var(--global-spacing-unit-large);
 }
 
@@ -23,9 +22,9 @@
     resize: vertical;
   }
 
-.c-appointment-list {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (min-width: 30em) {
+  .c-appointment-list {
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  }
 }
