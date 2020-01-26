@@ -16,6 +16,9 @@ class App extends Component {
   }
 
   render () {
+    const { appointments } = this.state
+    const hasAppointments = appointments.length > 0
+
     return (
       <>
         <PageHead title='Pacientes' />
@@ -28,7 +31,11 @@ class App extends Component {
           </div>
           <div className='c-panel'>
             <h2 className='o-headline'>Citas</h2>
-            <AppointmentList />
+            {
+              !hasAppointments
+                ? <p>No hay citas</p>
+                : <AppointmentList appointments={appointments} />
+            }
           </div>
         </main>
       </>

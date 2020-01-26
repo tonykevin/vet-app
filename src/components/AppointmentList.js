@@ -1,15 +1,22 @@
 import React from 'react'
 import Appointment from './Appointment'
 
-const AppointmentList = () => (
+const AppointmentList = ({ appointments }) => (
   <div className='o-layout c-appointment-list'>
-    <Appointment
-      animal='gato'
-      owner='Tony Salamanca'
-      date='20-10-01'
-      time='07:10'
-      symptom='Fractura de columna.'
-    />
+    {
+      appointments.map(
+        ({ animal, date, id, owner, symptom, time }) => (
+          <Appointment
+            key={id}
+            animal={animal}
+            owner={owner}
+            date={date}
+            time={time}
+            symptom={symptom}
+          />
+        )
+      )
+    }
   </div>
 )
 
