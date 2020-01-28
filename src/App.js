@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
   AppointmentList,
-  CreateAppointment,
+  AppointmentForm,
   PageHead
 } from './components'
 
@@ -24,10 +24,7 @@ class App extends Component {
         <PageHead title='Pacientes' />
         <main className='o-layout o-layout--vsplit2@sm o-wrapper'>
           <div className='c-panel'>
-            <h2 className='o-headline'>Crear una nueva cita</h2>
-            <CreateAppointment
-              createNewAppointment={this.createNewAppointment}
-            />
+            <AppointmentForm />
           </div>
           <div className='c-panel'>
             <h2 className='o-headline'>Citas</h2>
