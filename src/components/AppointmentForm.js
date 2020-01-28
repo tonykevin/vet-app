@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import uuid from 'uuid'
 
-const AppointmentForm = () => {
+const AppointmentForm = ({ createAppointment }) => {
   const [appointment, setAppointment] = useState({
     animal: '',
     owner: '',
@@ -37,14 +37,19 @@ const AppointmentForm = () => {
     }
 
     setError(false)
-
     appointment.id = uuid()
-    console.log(appointment)
+    createAppointment(appointment)
+    setAppointment({
+      animal: '',
+      owner: '',
+      date: '',
+      time: '',
+      symptom: ''
+    })
   }
 
   return (
     <>
-      <h2 className='o-headline'>Crear cita</h2>
       {
         error
           ? (
