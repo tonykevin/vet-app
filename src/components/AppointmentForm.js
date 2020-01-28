@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AppointmentForm = () => {
+  const [appointments, setAppointments] = useState({
+    animal: '',
+    owner: '',
+    date: '',
+    time: '',
+    symptom: ''
+  })
+
+  const updateState = ({ target }) => {
+    setAppointments({
+      ...appointments,
+      [target.name]: target.value
+    })
+  }
+
+  const { animal, date, owner, symptom, time } = appointments
+
   return (
     <>
       <h2 className='o-headline'>Crear cita</h2>
@@ -17,8 +34,10 @@ const AppointmentForm = () => {
             className='o-input-form'
             id='apptName'
             name='animal'
+            onChange={updateState}
             placeholder='Nombre del animal'
             type='text'
+            value={animal}
           />
         </div>
         <div className='o-layout__item o-layout__item--form'>
@@ -31,8 +50,10 @@ const AppointmentForm = () => {
             className='o-input-form'
             id='apptOwner'
             name='owner'
+            onChange={updateState}
             placeholder='Nombre del propietario'
             type='text'
+            value={owner}
           />
         </div>
         <div className='o-layout__item o-layout__item--vsplit2'>
@@ -46,7 +67,9 @@ const AppointmentForm = () => {
               className='o-input-form'
               id='apptDate'
               name='date'
+              onChange={updateState}
               type='date'
+              value={date}
             />
           </div>
           <div className='o-layout__item o-layout__item--form'>
@@ -59,7 +82,9 @@ const AppointmentForm = () => {
               className='o-input-form'
               id='apptTime'
               name='time'
+              onChange={updateState}
               type='time'
+              value={time}
             />
           </div>
         </div>
@@ -73,7 +98,9 @@ const AppointmentForm = () => {
             className='o-input-form c-appointment__textarea'
             id='apptSymptom'
             name='symptom'
+            onChange={updateState}
             placeholder='Describe los síntomas'
+            value={symptom}
           />
         </div>
         <button
