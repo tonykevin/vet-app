@@ -9,6 +9,8 @@ const AppointmentForm = () => {
     symptom: ''
   })
 
+  const [error, setError] = useState(false)
+
   const updateState = ({ target }) => {
     setAppointments({
       ...appointments,
@@ -21,12 +23,33 @@ const AppointmentForm = () => {
   const appointmentSubmit = e => {
     e.preventDefault()
 
-    alert('enviando...')
+    // Validate
+    if (
+      animal.trim() === '' ||
+      date.trim() === '' ||
+      owner.trim() === '' ||
+      symptom.trim() === '' ||
+      time.trim() === ''
+    ) {
+      setError(true)
+      return 1
+    }
+
+    console.log('ohoh')
   }
 
   return (
     <>
       <h2 className='o-headline'>Crear cita</h2>
+      {
+        error
+          ? (
+            <div className='c-alert c-alert--danger'>
+              Todos los campos son requeridos
+            </div>
+          )
+          : null
+      }
       <form
         className='o-layout'
         onSubmit={appointmentSubmit}
