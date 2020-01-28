@@ -18,11 +18,18 @@ const AppointmentForm = () => {
 
   const { animal, date, owner, symptom, time } = appointments
 
+  const appointmentSubmit = e => {
+    e.preventDefault()
+
+    alert('enviando...')
+  }
+
   return (
     <>
       <h2 className='o-headline'>Crear cita</h2>
       <form
         className='o-layout'
+        onSubmit={appointmentSubmit}
       >
         <div className='o-layout__item o-layout__item--form'>
           <label
