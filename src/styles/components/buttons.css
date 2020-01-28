@@ -17,13 +17,25 @@
   transition: var(--global-transition);
 }
 
-.c-btn:active,
-.c-btn:focus,
-.c-btn:hover {
-  filter: drop-shadow(0 0 14px var(--color-brand-primary-shadow));
-}
 
 .c-btn--primary {
   background-color: var(--color-brand-primary);
   box-shadow: 0 2px 1px 0 var(--color-brand-primary-dark10);
+}
+
+.c-btn--primary:active,
+.c-btn--primary:focus,
+.c-btn--primary:hover {
+  filter: drop-shadow(0 0 5px var(--color-brand-primary-shadow));
+}
+
+.c-btn--danger {
+  background-color: var(--color-brand-secondary);
+  box-shadow: 0 2px 1px 0 var(--color-brand-secondary-dark10);
+}
+
+.c-btn--danger:active,
+.c-btn--danger:focus,
+.c-btn--danger:hover {
+  filter: drop-shadow(0 0 5px var(--color-brand-secondary-shadow));
 }

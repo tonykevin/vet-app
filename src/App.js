@@ -16,6 +16,16 @@ function App () {
     ])
   }
 
+  const deleteAppointment = id => {
+    const newAppointments = appointments.filter(
+      appointment => appointment.id !== id
+    )
+
+    setAppointments(newAppointments)
+  }
+
+  const title = !hasAppointments ? 'No hay citas' : 'Administra tus citas'
+
   return (
     <>
       <PageHead title='Pacientes' />
@@ -25,11 +35,16 @@ function App () {
           <AppointmentForm createAppointment={createAppointment} />
         </div>
         <div className='c-panel'>
-          <h2 className='o-headline'>Citas</h2>
+          <h2 className='o-headline'>{title}</h2>
           {
             !hasAppointments
-              ? <p>No hay citas</p>
-              : <AppointmentList appointments={appointments} />
+              ? null
+              : (
+                <AppointmentList
+                  appointments={appointments}
+                  deleteAppointment={deleteAppointment}
+                />
+              )
           }
         </div>
       </main>

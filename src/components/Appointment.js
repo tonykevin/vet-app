@@ -1,6 +1,14 @@
 import React from 'react'
 
-const Appointment = ({ animal, owner, date, time, symptom }) => (
+const Appointment = ({
+  animal,
+  date,
+  deleteAppointment,
+  id,
+  owner,
+  symptom,
+  time
+}) => (
   <div className='o-layout__item c-appointment'>
     <label className='c-appointment__label'>Animal</label>
     <p className='c-appointment__info'>{animal}</p>
@@ -16,6 +24,13 @@ const Appointment = ({ animal, owner, date, time, symptom }) => (
 
     <label className='c-appointment__label'>Síntomas</label>
     <p>{symptom}</p>
+    <button
+      className='c-btn c-btn--danger'
+      onClick={() => deleteAppointment(id)}
+    >
+      Eliminar &times;
+    </button>
+
   </div>
 )
 
