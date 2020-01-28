@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import uuid from 'uuid'
 
 const AppointmentForm = () => {
-  const [appointments, setAppointments] = useState({
+  const [appointment, setAppointment] = useState({
     animal: '',
     owner: '',
     date: '',
@@ -12,13 +13,13 @@ const AppointmentForm = () => {
   const [error, setError] = useState(false)
 
   const updateState = ({ target }) => {
-    setAppointments({
-      ...appointments,
+    setAppointment({
+      ...appointment,
       [target.name]: target.value
     })
   }
 
-  const { animal, date, owner, symptom, time } = appointments
+  const { animal, date, owner, symptom, time } = appointment
 
   const appointmentSubmit = e => {
     e.preventDefault()
@@ -35,7 +36,10 @@ const AppointmentForm = () => {
       return 1
     }
 
-    console.log('ohoh')
+    setError(false)
+
+    appointment.id = uuid()
+    console.log(appointment)
   }
 
   return (
