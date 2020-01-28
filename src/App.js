@@ -13,12 +13,15 @@ function App () {
   const hasAppointments = appointments.length > 0
 
   useEffect(() => {
+    const initialAppointments =
+      JSON.parse(localStorage.getItem('appointments')) || []
+
     if (initialAppointments) {
       localStorage.setItem('appointments', JSON.stringify(appointments))
     } else {
       localStorage.setItem('appointments', JSON.stringify([]))
     }
-  })
+  }, [appointments])
 
   const createAppointment = appointment => {
     setAppointments([
