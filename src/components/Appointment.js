@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Appointment = ({
   animal,
@@ -33,5 +34,14 @@ const Appointment = ({
 
   </div>
 )
+
+Appointment.propTypes = {
+  animal: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  deleteAppointment: PropTypes.func.isRequired,
+  owner: PropTypes.string.isRequired,
+  symptom: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired
+}
 
 export default Appointment

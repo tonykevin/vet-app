@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import uuid from 'uuid'
+import PropTypes from 'prop-types'
 
 const AppointmentForm = ({ createAppointment }) => {
   const [appointment, setAppointment] = useState({
@@ -150,6 +151,10 @@ const AppointmentForm = ({ createAppointment }) => {
       </form>
     </>
   )
+}
+
+AppointmentForm.propTypes = {
+  createAppointment: PropTypes.func.isRequired
 }
 
 export default AppointmentForm
