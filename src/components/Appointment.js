@@ -11,22 +11,23 @@ const Appointment = ({
   time
 }) => (
   <div className='o-layout__item c-appointment'>
-    <label className='c-appointment__label'>Animal</label>
-    <p className='c-appointment__info'>{animal}</p>
-
-    <label className='c-appointment__label'>Propietario</label>
-    <p>{owner}</p>
-
-    <label className='c-appointment__label'>Fecha</label>
-    <p>{date}</p>
-
-    <label className='c-appointment__label'>Hora</label>
-    <p>{time}</p>
-
-    <label className='c-appointment__label'>Síntomas</label>
-    <p>{symptom}</p>
+    <p>
+      <label className='c-appointment__label'>animal</label> {animal}
+    </p>
+    <p>
+      <label className='c-appointment__label'>propietario</label> {owner}
+    </p>
+    <p>
+      <label className='c-appointment__label'>fecha</label> {date}
+    </p>
+    <p>
+      <label className='c-appointment__label'>hora</label> {time}
+    </p>
+    <p>
+      <label className='c-appointment__label'>síntomas</label> {symptom}
+    </p>
     <button
-      className='c-btn c-btn--danger'
+      className='o-layout__item--end c-btn c-btn--danger'
       onClick={() => deleteAppointment(id)}
     >
       Eliminar &times;

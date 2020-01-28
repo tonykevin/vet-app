@@ -3,17 +3,18 @@
 \* ------------------------------------ */
 
 .c-appointment {
-  align-items: center;
   background-color: var(--color-brand-primary-light);
   border-radius: 3px;
   box-shadow: 2px 2px 5px rgba(0 0 0 / 0.2);
   grid-row-gap: var(--global-spacing-unit-tiny);
-  grid-template-columns: 4.5rem auto;
-  padding: var(--global-spacing-unit-large);
+  padding: 1.5em;
 }
 
   .c-appointment__label {
+    cursor: auto;
+    display: inline-block;
     font-weight: bold;
+    width: 6em;
   }
 
   .c-appointment__textarea {
