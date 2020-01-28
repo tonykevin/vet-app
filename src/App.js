@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   AppointmentList,
   AppointmentForm,
@@ -6,8 +6,19 @@ import {
 } from './components'
 
 function App () {
-  const [appointments, setAppointments] = useState([])
+  const initialAppointments =
+    JSON.parse(localStorage.getItem('appointments')) || []
+
+  const [appointments, setAppointments] = useState(initialAppointments)
   const hasAppointments = appointments.length > 0
+
+  useEffect(() => {
+    if (initialAppointments) {
+      localStorage.setItem('appointments', JSON.stringify(appointments))
+    } else {
+      localStorage.setItem('appointments', JSON.stringify([]))
+    }
+  })
 
   const createAppointment = appointment => {
     setAppointments([
